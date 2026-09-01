@@ -82,7 +82,7 @@ Implemented lead-generation strategies using targeted outreach, landing pages, a
 Make sure Node.js and npm are installed on your computer.
 
 ```bash
-git clone PASTE_YOUR_GITHUB_REPOSITORY_URL_HERE
+git clone https://github.com/MayuriSantoshKharote/chaitanyatidke
 cd chaitanya-digital-hub
 npm install
 npm run dev
