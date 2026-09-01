@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { ArrowUp, Linkedin, Mail, MapPin, Phone, Send } from "lucide-react";
-import logo from "@/assets/cmt-logo.jpeg.asset.json";
 import { Reveal } from "./Reveal";
 import { SectionHeading } from "./SectionHeading";
 import { profile } from "./data";
