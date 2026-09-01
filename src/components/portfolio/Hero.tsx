@@ -1,5 +1,5 @@
 import { ArrowRight, Download, Linkedin, Mail, Phone } from "lucide-react";
-import photo from "@/assets/chaitanya-photo.png.asset.json";
+
 import { profile, education } from "./data";
 
 export function Hero() {
