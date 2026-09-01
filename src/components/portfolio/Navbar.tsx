@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { Menu, X, Mail } from "lucide-react";
-import logo from "@/assets/cmt-logo.jpeg.asset.json";
 import { navItems } from "./data";
 
 export function Navbar() {
@@ -45,8 +44,10 @@ export function Navbar() {
       >
         <a href="#home" className="flex min-w-0 items-center gap-3">
           <img
-            src={logo.url}
-            alt="Chaitanya Tidke monogram logo"
+            src="/cmt-logo.png"
+            alt="Chaitanya Tidke logo"
+            width={40}
+            height={40}
             className="h-10 w-10 shrink-0 rounded-full border border-border object-cover"
           />
           <span className="font-display truncate text-sm font-semibold tracking-[0.3em]">CMT</span>

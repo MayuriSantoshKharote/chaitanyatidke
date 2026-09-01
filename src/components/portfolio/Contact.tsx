@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { ArrowUp, Linkedin, Mail, MapPin, Phone, Send } from "lucide-react";
-import logo from "@/assets/cmt-logo.jpeg.asset.json";
 import { Reveal } from "./Reveal";
 import { SectionHeading } from "./SectionHeading";
 import { profile } from "./data";
@@ -183,8 +182,10 @@ export function Footer() {
       <div className="mx-auto grid w-full max-w-[76rem] gap-6 px-5 py-10 sm:grid-cols-[minmax(0,1fr)_auto] sm:items-center">
         <div className="flex min-w-0 items-center gap-4">
           <img
-            src={logo.url}
+            src="/cmt-logo.png"
             alt="Chaitanya Tidke logo"
+            width={44}
+            height={44}
             loading="lazy"
             className="h-11 w-11 shrink-0 rounded-full border border-border object-cover"
           />
