@@ -105,7 +105,7 @@ export function Hero() {
               }}
             />
             <img
-              src={photo.url}
+              src="/profile-photo.png"
               alt="Portrait of Chaitanya Manik Tidke"
               width={1131}
               height={1414}
