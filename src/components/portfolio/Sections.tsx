@@ -1,3 +1,4 @@
+import type { LucideIcon } from "lucide-react";
 import {
   Award,
   BarChart3,
@@ -29,8 +30,13 @@ import {
   skillGroups,
 } from "./data";
 
-const highlightIcons = [Megaphone, Share2, Target, Rocket];
-const groupIcons = [BarChart3, Lightbulb, Wrench];
+const highlightIcons: LucideIcon[] = [Megaphone, Share2, Target, Rocket];
+const groupIcons: LucideIcon[] = [BarChart3, Lightbulb, Wrench];
+const projectIcons: LucideIcon[] = [Share2, Target];
+
+function pickIcon<T>(arr: T[], index: number): T {
+  return arr[index % arr.length]!;
+}
 
 export function About() {
   return (
