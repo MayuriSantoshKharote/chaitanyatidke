@@ -32,7 +32,7 @@ export const highlights = [
 export const education = {
   degree: "B.E. Artificial Intelligence & Data Science",
   college: "JIT College, Nashik",
-  period: "2023 – Present",
+  period: "2024",
   note: "Currently pursuing undergraduate engineering studies with a focus on Artificial Intelligence, Data Science, and data-driven decision-making.",
   year: "2nd Year",
 };
@@ -83,7 +83,7 @@ export const experience = [
   {
     role: "Digital Marketing & Social Media Marketing",
     org: "Freelance / Projects",
-    period: "2023 – Present",
+    period: "2024",
     points: [
       "Planned and executed digital marketing campaigns focused on audience growth, brand visibility, and engagement.",
       "Managed social media platforms, content calendars, and community engagement to improve reach and conversions.",
@@ -95,7 +95,7 @@ export const experience = [
   {
     role: "Cultural Coordinator",
     org: "JIT College, Nashik",
-    period: "2023 – Present",
+    period: "2024",
     points: [
       "Coordinated cultural events and activities for students and staff.",
       "Managed teams, delegated tasks, and ensured smooth event execution.",
