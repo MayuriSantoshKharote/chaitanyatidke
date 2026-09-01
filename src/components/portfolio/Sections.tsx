@@ -1,3 +1,4 @@
+import type { LucideIcon } from "lucide-react";
 import {
   Award,
   BarChart3,
@@ -29,8 +30,13 @@ import {
   skillGroups,
 } from "./data";
 
-const highlightIcons = [Megaphone, Share2, Target, Rocket];
-const groupIcons = [BarChart3, Lightbulb, Wrench];
+const highlightIcons: LucideIcon[] = [Megaphone, Share2, Target, Rocket];
+const groupIcons: LucideIcon[] = [BarChart3, Lightbulb, Wrench];
+const projectIcons: LucideIcon[] = [Share2, Target];
+
+function pickIcon<T>(arr: T[], index: number): T {
+  return arr[index % arr.length]!;
+}
 
 export function About() {
   return (
@@ -56,7 +62,7 @@ export function About() {
             </Reveal>
             <ul className="mt-8 grid gap-4 sm:grid-cols-2">
               {highlights.map((item, i) => {
-                const Icon = highlightIcons[i % highlightIcons.length];
+                const Icon = pickIcon(highlightIcons, i);
                 return (
                   <Reveal as="li" key={item.title} delay={i * 80} className="glass-card p-5">
                     <Icon className="h-5 w-5 text-accent" aria-hidden="true" />
@@ -105,7 +111,7 @@ export function Skills() {
         </SectionHeading>
         <div className="grid gap-6 lg:grid-cols-3">
           {skillGroups.map((group, gi) => {
-            const Icon = groupIcons[gi % groupIcons.length];
+            const Icon = pickIcon(groupIcons, gi);
             return (
               <Reveal key={group.title} delay={gi * 100} className="glass-card p-6">
                 <div className="flex items-center gap-3">
@@ -191,14 +197,13 @@ export function Experience() {
 }
 
 export function Projects() {
-  const icons = [Share2, Target];
   return (
     <section id="projects" className="relative">
       <div className="section-shell">
         <SectionHeading eyebrow="Projects" title="Projects & Work Highlights" />
         <div className="grid gap-6 lg:grid-cols-2">
           {projects.map((project, i) => {
-            const Icon = icons[i % icons.length];
+            const Icon = pickIcon(projectIcons, i);
             return (
               <Reveal key={project.title} delay={i * 120} className="glass-card group p-7">
                 <div
