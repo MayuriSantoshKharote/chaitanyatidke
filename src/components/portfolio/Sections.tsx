@@ -15,7 +15,6 @@ import {
   Users,
   Wrench,
 } from "lucide-react";
-import photo from "@/assets/chaitanya-photo.png.asset.json";
 import { Reveal } from "./Reveal";
 import { SectionHeading } from "./SectionHeading";
 import {
@@ -46,7 +45,7 @@ export function About() {
         <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
           <Reveal className="relative mx-auto w-full max-w-xs">
             <img
-              src={photo.url}
+              src="/profile-photo.png"
               alt="Chaitanya Manik Tidke"
               width={1131}
               height={1414}
